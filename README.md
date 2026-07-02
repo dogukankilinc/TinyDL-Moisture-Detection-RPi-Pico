@@ -21,13 +21,13 @@ This project demonstrates a complete TinyDL pipeline — from raw sensor data co
 | Pico Pin | Connection |
 |----------|------------|
 | GP27 (A1) | Moisture sensor analog output |
-| GP0 | 7-Segment — Segment A |
-| GP1 | 7-Segment — Segment B |
-| GP2 | 7-Segment — Segment C |
-| GP3 | 7-Segment — Segment D |
-| GP4 | 7-Segment — Segment E |
-| GP5 | 7-Segment — Segment F |
-| GP6 | 7-Segment — Segment G |
+| GP10 | 7-Segment — Segment A |
+| GP11 | 7-Segment — Segment B |
+| GP12 | 7-Segment — Segment C |
+| GP13 | 7-Segment — Segment D |
+| GP14 | 7-Segment — Segment E |
+| GP16 | 7-Segment — Segment F |
+| GP17 | 7-Segment — Segment G |
 | 3V3 / GND | Sensor and display power |
 
 ### Circuit Diagram
@@ -107,7 +107,7 @@ The trained network was integrated into a Simulink model and deployed to the Ras
 ```
 Analog Input (A1) → 1/4095 (Normalize) → Buffer (50 samples)
     → single → [1D CNN Inference] → Idx → double
-    → MATLAB Function (LED) → Digital Write (GP0–GP6) → 7-Segment Display
+    → MATLAB Function (LED) → Digital Write (GP10–GP14, GP16, GP17) → 7-Segment Display
 ```
 
 ### 6. Display Logic
@@ -115,7 +115,7 @@ Analog Input (A1) → 1/4095 (Normalize) → Buffer (50 samples)
 A MATLAB Function block maps the CNN prediction to 7-segment display outputs. On startup, the display counts from 0 to 9 as a self-test, then switches to live inference mode showing `1` (Dry) or `2` (Wet).
 
 ```matlab
-function [GP0, GP1, GP2, GP3, GP4, GP5, GP6] = LED(AI_Tahmin)
+function [GP10, GP11, GP12, GP13, GP14, GP16, GP17] = LED(AI_Tahmin)
     persistent sayac baslangic_bitti
     if isempty(sayac)
         sayac = 0;
@@ -131,8 +131,8 @@ function [GP0, GP1, GP2, GP3, GP4, GP5, GP6] = LED(AI_Tahmin)
     end
 
     switch gosterilecek_deger
-        case 1, GP0=0; GP1=1; GP2=1; GP3=0; GP4=0; GP5=0; GP6=0;
-        case 2, GP0=1; GP1=1; GP2=0; GP3=1; GP4=1; GP5=0; GP6=1;
+        case 1, GP10=0; GP11=1; GP12=1; GP13=0; GP14=0; GP16=0; GP17=0;
+        case 2, GP10=1; GP11=1; GP12=0; GP13=1; GP14=1; GP16=0; GP17=1;
         % ... (full mapping for digits 0–9)
     end
 end
