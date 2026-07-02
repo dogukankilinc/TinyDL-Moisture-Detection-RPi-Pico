@@ -13,7 +13,7 @@ This project demonstrates a complete TinyDL pipeline — from raw sensor data co
 | Raspberry Pi Pico (RP2040) | Target microcontroller |
 | FC-28 Capacitive Moisture Sensor | Analog moisture sensing module |
 | SH5261AS 7-Segment Display | Dual-digit common cathode LED display |
-| Resistors | 10 kΩ pull-up for DHT11, current limiting for display |
+| Resistors | 330 Ω current limiting resistor (Orange-Orange-Brown) for 7-segment display |
 | Breadboard & Jumper Wires | Prototyping |
 
 ### Pin Mapping
