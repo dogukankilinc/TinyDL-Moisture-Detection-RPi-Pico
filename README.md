@@ -159,8 +159,7 @@ end
 ├── train_script.m              # Model training script
 ├── tiny_beyin.mat              # Trained network weights
 ├── data.mat                    # Collected sensor data
-├── WS.mat                     # Workspace variables
-├── LCD_Ekran_TinyDL_RP/        # IO Device Builder block (unused in final version)
+├── WS.mat                      # Workspace variables
 ├── docs/                       # Documentation images
 │   ├── circuit_diagram.jpg
 │   ├── data_export.png
