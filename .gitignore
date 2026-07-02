@@ -1,0 +1,21 @@
+# Simulink build artifacts
+tinydl_ert_rtw/
+slprj/
+LCD_Ekran_TinyDL_RP/slprj/
+LCD_Ekran_TinyDL_RP/tinydl_ert_rtw/
+
+# Compiled binaries
+*.bin
+*.elf
+*.uf2
+*.o
+*.d
+
+# Simulink cache
+*.slxc
+*.slx.autosave
+*.slx.r*
+
+# MATLAB temp
+*.asv
+*.m~
