@@ -1,10 +1,10 @@
-# TinyML Moisture Detection on Raspberry Pi Pico
+# TinyDL Moisture Detection on Raspberry Pi Pico
 
 An end-to-end embedded machine learning project that classifies surface moisture conditions (**Dry** or **Wet**) in real time using a 1D Convolutional Neural Network deployed on a Raspberry Pi Pico. The inference result is displayed on a 7-segment display.
 
 ## Overview
 
-This project demonstrates a complete TinyML pipeline — from raw sensor data collection to on-device inference — built entirely within the MATLAB & Simulink ecosystem. A capacitive moisture sensor feeds analog readings into a trained 1D CNN running on the RP2040 microcontroller, and the prediction is shown on a 7-segment LED display that counts from 0 to 9 on startup before switching to live classification output.
+This project demonstrates a complete TinyDL pipeline — from raw sensor data collection to on-device inference — built entirely within the MATLAB & Simulink ecosystem. A capacitive moisture sensor feeds analog readings into a trained 1D CNN running on the RP2040 microcontroller, and the prediction is shown on a 7-segment LED display that counts from 0 to 9 on startup before switching to live classification output.
 
 ## Hardware
 
