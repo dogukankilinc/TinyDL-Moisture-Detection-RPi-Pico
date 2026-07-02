@@ -2,7 +2,7 @@ classdef LCD_Ekran_TinyDL_RP < matlab.System ...
         & coder.ExternalDependency ...
         & matlabshared.sensors.simulink.internal.BlockSampleTime
 
-    % TinyML I2C LCD Ekran
+    % TinyDL I2C LCD Ekran
     %#codegen
     %#ok<*EMCA>
 
