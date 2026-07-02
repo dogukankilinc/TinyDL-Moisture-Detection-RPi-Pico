@@ -182,6 +182,3 @@ end
 
 > *Demo video/photo link will be added here.*
 
-## License
-
-This project is released under the [MIT License](LICENSE).
