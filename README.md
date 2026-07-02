@@ -36,7 +36,7 @@ This project demonstrates a complete TinyDL pipeline — from raw sensor data co
 
 ## Software Requirements
 
-- MATLAB R2025b (or later)
+- MATLAB 
 - Simulink
 - Deep Learning Toolbox
 - Simulink Support Package for Arduino Hardware
