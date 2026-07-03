@@ -180,5 +180,5 @@ end
 
 ## Demo
 
-> *[Demo video/photo link will be added here.](https://drive.google.com/file/d/1_rjbi5Ji2pLE78ubjXipWu4cctR-ouHd/view?usp=sharing)*
+> *[Demo video](https://drive.google.com/file/d/1_rjbi5Ji2pLE78ubjXipWu4cctR-ouHd/view?usp=sharing)*
 
