@@ -21,13 +21,13 @@ This project demonstrates a complete TinyDL pipeline — from raw sensor data co
 | Pico Pin | Connection |
 |----------|------------|
 | GP27 (A1) | Moisture sensor analog output |
-| GP0 | 7-Segment — Segment A |
-| GP1 | 7-Segment — Segment B |
-| GP2 | 7-Segment — Segment C |
-| GP3 | 7-Segment — Segment D |
-| GP4 | 7-Segment — Segment E |
-| GP5 | 7-Segment — Segment F |
-| GP6 | 7-Segment — Segment G |
+| GP0 | 7-Segment — PIN 11 |
+| GP1 | 7-Segment — PIN 10 |
+| GP2 | 7-Segment — PIN 8 |
+| GP3 | 7-Segment — PIN 6 |
+| GP4 | 7-Segment — PIN 5 |
+| GP5 | 7-Segment — PIN 12 |
+| GP6 | 7-Segment — PIN 7 |
 | 3V3 / GND | Sensor and display power |
 
 ### Circuit Diagram
